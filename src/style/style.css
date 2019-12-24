@@ -1,0 +1,42 @@
+.eyes-container{
+    width: 20%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+    padding: 100px ;
+    border-radius: 200px;
+    position: relative;
+
+}
+.eyes-container::after{
+    content:"";
+    padding: 20px;
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-30%, 0 ) rotateZ(339deg);
+    border: 3px solid transparent;
+    border-bottom: 3px solid black;
+    border-radius: 50%
+}
+
+.eyes__border,.eyes__border_right{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: relative;
+    /* float: left; */
+}  
+
+.eyes__pupil , .eyes__pupil_right{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    border-radius: 50%;
+}
